@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TallerAndroidMoviles2019</string>
+    <string name="title">Taller Android Studio\nSantiago Romero \nJhojan A. Ramos</string>
+    <string name="user">Usuario</string>
+    <string name="pass">Contraseña</string>
+    <string name="btn1">Iniciar Sesion</string>
+    <string name="btn2">Registrarse</string>
+    <string name="titlulo_pickers">Obtener fecha y hora</string>
+    <string name="formato_fecha">dd/mm/yyyy</string>
+    <string name="formato_hora">hh:mm</string>
+</resources>

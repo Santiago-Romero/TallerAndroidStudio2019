@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Consulta">
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="715dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/consulta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consultar"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/filtros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filtros: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/sedes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sedes:" />
+
+        <RadioGroup
+            android:id="@+id/selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/cali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cali" />
+
+            <RadioButton
+                android:id="@+id/tulua"
+                android:layout_width="53dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tuluá" />
+
+            <RadioButton
+                android:id="@+id/buga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Buga" />
+        </RadioGroup>
+
+        <DatePicker
+            android:id="@+id/fecha"
+            android:layout_width="match_parent"
+            android:layout_height="123dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner" />
+
+        <CheckBox
+            android:id="@+id/vigente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vigente" />
+
+        <Button
+            android:id="@+id/buscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="buscar"
+            android:onClick="buscar"/>
+
+        <TextView
+            android:id="@+id/resultados"
+            android:layout_width="match_parent"
+            android:layout_height="398dp"
+            android:text="Resultados:\n" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
